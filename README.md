@@ -69,6 +69,15 @@ You have two options to authenticate when pushing a change to your repository :
 ![](doc/sample_ascii_art_from_picture.png)
 3. Make a jar and run the jar to see if you have the same output. Check that link below to generate a jar which includes the maven dependencies :
  https://stackoverflow.com/questions/574594/how-can-i-create-an-executable-runnable-jar-with-dependencies-using-maven
+4. TIP -  Use the resource folder to store your picture. To package the resources files in the jar, add this section:
+
+        <resources>
+            <resource>
+            <directory>main/resources</directory>
+            </resource>
+        </resources>
+
+under the `<build>` section.
 
  ## Export the docker image with the new code
  1. Re-build a docker image with the latest jar you have created
