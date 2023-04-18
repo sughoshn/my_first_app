@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="nagra:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/nagra_jar</output-path>
+    <root id="archive" name="nagra.jar">
+      <element id="module-output" name="nagra" />
+    </root>
+  </artifact>
+</component>
