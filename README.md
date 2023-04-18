@@ -50,7 +50,13 @@ You have two options to authenticate when pushing a change to your repository :
 1. Follow https://www.jetbrains.com/help/idea/convert-a-regular-project-into-a-maven-project.html
     - If you encounter some issues during the procedure, try restarting IntelliJ IDEA.
 2. Generate the jar (as mentioned in the procedure)
-2. Execute your generated jar from the terminal (cmd or other), check that "Hello World" is displayed
+3. Execute your generated jar from IntelliJ, check that "Hello World" is displayed
+4. If you have error such as "Missing Class...", add this section in your pom.xml (adapt the location if necessary):
+
+    `<sourceDirectory>main/src</sourceDirectory>`
+
+    under the `<build>` section.
+5. If you still have issues, right click on your project folder and select "Reload from Disk"
 
  ## Build a docker running your code
  1. Build a docker image that will run your code, include your first name in the docker image.
