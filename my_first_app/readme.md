@@ -18,4 +18,5 @@ Dockerfinal with ascii :
 <h3>What is the difference between a virtual machine and a docker container ?
 </h3>
 ![containers-vs-virtual-machines](src/main/resources/images/containers-vs-virtual-machines.png)
+
 VMs have the host OS and guest OS inside each VM. A guest OS can be any OS, like Linux or Windows, irrespective of the host OS. In contrast, Docker containers host on a single physical server with a host OS, which shares among them
