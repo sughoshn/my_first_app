@@ -86,5 +86,5 @@ Send me your git repo link on discord through direct message by **Friday, 21th A
 After you have sent me your git repo link and I have given you the green light, you can do the following tasks :
 - Change your code to run indefinetly, printing the ascii art every 15 seconds. 
 - While the container is running find a way to access the shell of the app.
--  Change your code to display a dad joke every 15 seconds (forever), fetching your joke from https://icanhazdadjoke.com/api. Check the documentation on that website.
+- Change your code to display a different dad joke every 15 seconds (forever), fetching your jokes from https://icanhazdadjoke.com/api. Check the documentation on that website.
 - Build and run the docker and check that you get a joke every 15 seconds.
