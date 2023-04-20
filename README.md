@@ -50,13 +50,7 @@ You have two options to authenticate when pushing a change to your repository :
 1. Follow https://www.jetbrains.com/help/idea/convert-a-regular-project-into-a-maven-project.html
     - If you encounter some issues during the procedure, try restarting IntelliJ IDEA.
 2. Generate the jar (as mentioned in the procedure)
-3. Execute your generated jar from IntelliJ, check that "Hello World" is displayed
-4. If you have error such as "Missing Class...", add this section in your pom.xml (adapt the location if necessary):
-
-    `<sourceDirectory>main/src</sourceDirectory>`
-
-    under the `<build>` section.
-5. If you still have issues, right click on your project folder and select "Reload from Disk"
+2. Execute your generated jar from the terminal (cmd or other), check that "Hello World" is displayed
 
  ## Build a docker running your code
  1. Build a docker image that will run your code, include your first name in the docker image.
@@ -69,15 +63,6 @@ You have two options to authenticate when pushing a change to your repository :
 ![](doc/sample_ascii_art_from_picture.png)
 3. Make a jar and run the jar to see if you have the same output. Check that link below to generate a jar which includes the maven dependencies :
  https://stackoverflow.com/questions/574594/how-can-i-create-an-executable-runnable-jar-with-dependencies-using-maven
-4. TIP -  Use the resource folder to store your picture. To package the resources files in the jar, add this section:
-
-        <resources>
-            <resource>
-            <directory>main/resources</directory>
-            </resource>
-        </resources>
-
-under the `<build>` section.
 
  ## Export the docker image with the new code
  1. Re-build a docker image with the latest jar you have created
@@ -96,3 +81,10 @@ under the `<build>` section.
 - Refer to https://www.markdownguide.org/basic-syntax/ to learn about markdown syntax (ie. how to include pictures)
 ## Deadline
 Send me your git repo link on discord through direct message by **Friday, 21th April, 5pm**.
+
+## Extra tasks
+After you have sent me your git repo link and I have given you the green light, you can do the following tasks :
+- Change your code to run indefinetly, printing the ascii art every 15 seconds. 
+- While the container is running find a way to access the shell of the app.
+-  Change your code to display a dad joke every 15 seconds (forever), fetching your joke from https://icanhazdadjoke.com/api. Check the documentation on that website.
+- Build and run the docker and check that you get a joke every 15 seconds.
